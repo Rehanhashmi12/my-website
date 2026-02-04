@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -89,3 +90,24 @@ body {
   margin: 6px 0;
   font-size: 1rem;
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: #050b1e;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: #7CFF9B;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
