@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Rehan Hashmi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+</nav>
+
+<div class="content">
+  <h1>Projects</h1>
+
+  <div class="project">
+    <h2>Personal Portfolio Website</h2>
+    <p>
+      A multi-page responsive website built using HTML and CSS,
+      hosted on GitHub Pages.
+    </p>
+  </div>
+
+  <div class="project">
+    <h2>Chocolate Image Classifier</h2>
+    <p>
+      A beginner-level image classification project using Python
+      and a Convolutional Neural Network.
+    </p>
+  </div>
+
+  <div class="project">
+    <h2>Brain Tumor MRI Classification</h2>
+    <p>
+      A deep learning project that classifies MRI images into
+      tumor categories using CNN and transfer learning.
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>
 
