@@ -1,24 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eaeaea;
-    margin: 0;
-    padding: 0;
+  background-color: #0b1a2d; /* navy blue */
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
 }
 
+/* PAGE WRAPPER */
 .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
+/* CARD BASE */
 .card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 18px;
+  overflow: hidden;
 }
 
-h1, h2 {
-    color: #333;
+/* IMAGE CARDS */
+.card.image {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* NO ZOOM */
+  background-color: #000;
+}
+
+/* TOP IMAGE */
+.profile {
+  background-image: url("images/profile.jpg");
+}
+
+/* BOTTOM IMAGE */
+.pattern {
+  background-image: url("images/pattern.jpg");
+}
+
+/* TEXT CARD */
+.card.text {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  text-align: center;
+}
+
+/* TEXT STYLES */
+.card.text h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.8rem;
+  color: #7CFF9B;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.card.text h2 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.card.text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.card.text ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.card.text ul li {
+  margin: 6px 0;
+  font-size: 1rem;
 }
