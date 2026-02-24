@@ -1,11 +1,14 @@
+/* ================= THEME ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap');
+
 :root{
   --accent:#22c55e;
   --accent2:#00ffd5;
   --card:rgba(255,255,255,0.05);
   --text:#e5e7eb;
 }
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+/* ================= RESET ================= */
 *{
   margin:0;
   padding:0;
@@ -15,7 +18,7 @@
 body{
   background:linear-gradient(135deg,#0f172a,#020617);
   font-family:'Poppins',sans-serif;
-  color:#e5e7eb;
+  color:var(--text);
 }
 
 /* ================= PAGE WRAPPER ================= */
@@ -37,17 +40,19 @@ body{
   position:sticky;
   top:0;
   z-index:10;
+  backdrop-filter:blur(10px);
 }
 
 .navbar a{
-  color:#7CFF9B;
+  color:var(--accent);
   text-decoration:none;
   font-weight:600;
   font-size:1.1rem;
+  transition:.3s;
 }
 
 .navbar a:hover{
-  text-decoration:underline;
+  text-shadow:0 0 12px var(--accent);
 }
 
 /* ================= CARD BASE ================= */
@@ -73,25 +78,28 @@ body{
   background-image:url("images/pattern.jpg");
 }
 
-/* TEXT CARD */
+/* ================= GLASS TEXT CARD ================= */
 .card.text{
-  background-color:rgba(0,0,0,0.85);
+  background:var(--card);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,0.08);
   padding:40px;
   text-align:center;
 }
 
-/* TEXT STYLES */
+/* TEXT */
 .card.text h1{
   font-family:'Great Vibes', cursive;
-  font-size:3.8rem;
-  color:#7CFF9B;
+  font-size:4.2rem;
+  color:var(--accent);
   margin-bottom:10px;
+  text-shadow:0 0 18px rgba(34,197,94,0.4);
 }
 
 .subtitle{
   font-size:1.1rem;
   margin-bottom:30px;
-  color:#e0e0e0;
+  color:#cbd5e1;
 }
 
 .card.text h2{
@@ -103,7 +111,7 @@ body{
 .card.text p{
   font-size:1rem;
   line-height:1.6;
-  color:#dddddd;
+  color:#d1d5db;
 }
 
 .card.text ul{
@@ -119,22 +127,28 @@ body{
 .project{
   margin-top:40px;
   padding:24px;
-  border-left:4px solid #7CFF9B;
-  background:rgba(255,255,255,0.04);
-  border-radius:8px;
+  border-left:4px solid var(--accent);
+  background:var(--card);
+  backdrop-filter:blur(12px);
+  border-radius:10px;
+  transition:.3s;
+}
+
+.project:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 25px rgba(0,255,213,0.15);
 }
 
 .project h2{
   margin-bottom:10px;
-  color:#7CFF9B;
+  color:var(--accent);
 }
 
-/* ================= SOCIALS ================= */
 /* ================= SOCIALS ================= */
 .socials{
   text-align:center;
   padding:40px 20px;
-  margin-top:-20px; /* raises section up */
+  margin-top:-10px;
 }
 
 .socials h2{
@@ -145,21 +159,21 @@ body{
   display:flex;
   justify-content:center;
   gap:50px;
-  margin-top:10px;
 }
 
+/* BIG ICONS */
 .icon{
-  font-size:60px;          /* BIG icons */
-  padding:22px;
+  font-size:70px;
+  padding:24px;
   border-radius:50%;
-  background:#111;
-  color:#00ffd5;
-  transition:0.3s;
+  background:#0b1220;
+  color:var(--accent2);
+  transition:.35s;
 }
 
 .icon:hover{
-  transform:translateY(-10px) scale(1.15); /* float up */
-  box-shadow:0 0 25px #00ffd5;
+  transform:translateY(-12px) scale(1.18);
+  box-shadow:0 0 35px var(--accent2);
 }
 
 /* brand hover */
@@ -184,15 +198,13 @@ body{
 }
 
 .card.text h1{
-  font-size:2.6rem;
+  font-size:2.8rem;
 }
 
 .icon{
-  font-size:34px;
-  padding:14px;
+  font-size:40px;
+  padding:16px;
 }
 
 }
-
-
 
