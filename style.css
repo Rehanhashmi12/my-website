@@ -124,24 +124,27 @@ body{
 }
 
 /* ================= SOCIALS ================= */
+/* ================= SOCIALS ================= */
 .socials{
   text-align:center;
-  padding:60px 20px;
+  padding:40px 20px;
+  margin-top:-20px; /* raises section up */
 }
 
 .socials h2{
-  margin-bottom:20px;
+  margin-bottom:25px;
 }
 
 .social-icons{
   display:flex;
   justify-content:center;
-  gap:40px;
+  gap:50px;
+  margin-top:10px;
 }
 
 .icon{
-  font-size:42px;
-  padding:18px;
+  font-size:60px;          /* BIG icons */
+  padding:22px;
   border-radius:50%;
   background:#111;
   color:#00ffd5;
@@ -149,11 +152,11 @@ body{
 }
 
 .icon:hover{
-  transform:translateY(-6px) scale(1.1);
-  box-shadow:0 0 20px #00ffd5;
+  transform:translateY(-10px) scale(1.15); /* float up */
+  box-shadow:0 0 25px #00ffd5;
 }
 
-/* Brand colors on hover */
+/* brand hover */
 .github:hover{color:#fff;}
 .linkedin:hover{color:#0A66C2;}
 .email:hover{color:#ff6b6b;}
@@ -184,3 +187,4 @@ body{
 }
 
 }
+
