@@ -1,154 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-* {
-  
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  background-color: #0b1a2d; /* navy blue */
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: white;
+body{
+  background-color:#0b1a2d;
+  font-family:"Segoe UI", Arial, sans-serif;
+  color:white;
 }
 
-/* PAGE WRAPPER */
-.container {
-  max-width: 900px;
-  margin: 60px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+/* ================= PAGE WRAPPER ================= */
+.container{
+  max-width:900px;
+  margin:60px auto;
+  display:flex;
+  flex-direction:column;
+  gap:40px;
 }
 
-/* CARD BASE */
-.card {
-  border-radius: 18px;
-  overflow: hidden;
+/* ================= NAVBAR ================= */
+.navbar{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:20px;
+  background:#050b1e;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.navbar a{
+  color:#7CFF9B;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1.1rem;
+}
+
+.navbar a:hover{
+  text-decoration:underline;
+}
+
+/* ================= CARD BASE ================= */
+.card{
+  border-radius:18px;
+  overflow:hidden;
 }
 
 /* IMAGE CARDS */
-.card.image {
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; /* NO ZOOM */
-  background-color: #000;
+.card.image{
+  height:300px;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  background-color:#000;
 }
 
-/* TOP IMAGE */
-.profile {
-  background-image: url("images/profile.jpg");
+.profile{
+  background-image:url("images/profile.jpg");
 }
 
-/* BOTTOM IMAGE */
-.pattern {
-  background-image: url("images/pattern.jpg");
+.pattern{
+  background-image:url("images/pattern.jpg");
 }
 
 /* TEXT CARD */
-.card.text {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 40px;
-  text-align: center;
+.card.text{
+  background-color:rgba(0,0,0,0.85);
+  padding:40px;
+  text-align:center;
 }
 
 /* TEXT STYLES */
-.card.text h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3.8rem;
-  color: #7CFF9B;
-  margin-bottom: 10px;
+.card.text h1{
+  font-family:'Great Vibes', cursive;
+  font-size:3.8rem;
+  color:#7CFF9B;
+  margin-bottom:10px;
 }
 
-.subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: #e0e0e0;
+.subtitle{
+  font-size:1.1rem;
+  margin-bottom:30px;
+  color:#e0e0e0;
 }
 
-.card.text h2 {
-  margin-top: 35px;
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-  color: #ffffff;
+.card.text h2{
+  margin-top:35px;
+  margin-bottom:10px;
+  font-size:1.4rem;
 }
 
-.card.text p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #dddddd;
+.card.text p{
+  font-size:1rem;
+  line-height:1.6;
+  color:#dddddd;
 }
 
-.card.text ul {
-  list-style: none;
-  margin-top: 10px;
+.card.text ul{
+  list-style:none;
+  margin-top:10px;
 }
 
-.card.text ul li {
-  margin: 6px 0;
-  font-size: 1rem;
-}
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  background: #050b1e;
-  position: sticky;
-  top: 0;
+.card.text ul li{
+  margin:6px 0;
 }
 
-.navbar a {
-  color: #7CFF9B;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
+/* ================= PROJECTS ================= */
+.project{
+  margin-top:40px;
+  padding:24px;
+  border-left:4px solid #7CFF9B;
+  background:rgba(255,255,255,0.04);
+  border-radius:8px;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
-}
-.project {
-  margin-top: 40px;
-  padding: 24px;
-  border-left: 4px solid #7CFF9B;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 8px;
+.project h2{
+  margin-bottom:10px;
+  color:#7CFF9B;
 }
 
-.project h2 {
-  margin-bottom: 10px;
-  color: #7CFF9B;
-
+/* ================= SOCIALS ================= */
 .socials{
   text-align:center;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
-.social-links a{
-  display:inline-block;
-  margin:10px 15px;
-  padding:10px 18px;
-  border-radius:8px;
+.socials h2{
+  margin-bottom:20px;
+}
+
+.social-icons{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+.icon{
+  font-size:42px;
+  padding:18px;
+  border-radius:50%;
   background:#111;
   color:#00ffd5;
-  text-decoration:none;
-  font-weight:600;
   transition:0.3s;
 }
 
-.social-links a:hover{
-  transform:translateY(-3px);
-  opacity:0.8;
+.icon:hover{
+  transform:translateY(-6px) scale(1.1);
+  box-shadow:0 0 20px #00ffd5;
 }
 
+/* Brand colors on hover */
+.github:hover{color:#fff;}
+.linkedin:hover{color:#0A66C2;}
+.email:hover{color:#ff6b6b;}
 
+/* ================= MOBILE ================= */
+@media(max-width:768px){
 
-
-  
+.container{
+  margin:30px 15px;
 }
 
+.navbar{
+  gap:20px;
+  font-size:0.9rem;
+}
 
+.card.text{
+  padding:25px;
+}
 
+.card.text h1{
+  font-size:2.6rem;
+}
+
+.icon{
+  font-size:34px;
+  padding:14px;
+}
+
+}
