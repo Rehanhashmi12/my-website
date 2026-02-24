@@ -1,3 +1,9 @@
+:root{
+  --accent:#22c55e;
+  --accent2:#00ffd5;
+  --card:rgba(255,255,255,0.05);
+  --text:#e5e7eb;
+}
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 *{
@@ -187,5 +193,6 @@ body{
 }
 
 }
+
 
 
