@@ -7,9 +7,9 @@
 }
 
 body{
-  background-color:#0b1a2d;
-  font-family:"Segoe UI", Arial, sans-serif;
-  color:white;
+  background:linear-gradient(135deg,#0f172a,#020617);
+  font-family:'Poppins',sans-serif;
+  color:#e5e7eb;
 }
 
 /* ================= PAGE WRAPPER ================= */
@@ -187,4 +187,5 @@ body{
 }
 
 }
+
 
