@@ -204,7 +204,16 @@ body{
   padding:16px;
 }
 
+/* ================= ABOUT PAGE ================= */
+
+.content p{
+  font-size: 1.2rem;   /* bigger text */
+  line-height: 1.8;    /* better spacing */
+  margin-top: 15px;
 }
+
+}
+
 
 
 
