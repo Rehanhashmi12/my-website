@@ -111,24 +111,30 @@ body{
 }
 
 /* ================= PROJECTS ================= */
-.project{
-  margin-top:40px;
-  padding:24px;
-  border-left:4px solid var(--accent);
-  background:var(--card);
-  backdrop-filter:blur(12px);
-  border-radius:10px;
-  transition:.3s;
+
+
+.project {
+  margin-top: 40px;
+  padding: 24px;
+  border-left: 4px solid #00aaff;   /* Bright Blue Accent */
+  background: #111827;              /* Dark Card */
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.project:hover{
-  transform:translateY(-5px);
-  box-shadow:0 0 25px rgba(0,255,213,0.15);
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 170, 255, 0.4); /* Blue Glow */
 }
 
-.project h2{
-  margin-bottom:10px;
-  color:var(--accent);
+.project h2 {
+  margin-bottom: 10px;
+  color: #00aaff;  /* Blue Title */
+}
+
+.project p {
+  color: #cbd5e1;  /* Light Gray Text */
 }
 
 /* ================= SOCIALS ================= */
@@ -194,4 +200,5 @@ body{
 }
 
 }
+
 
